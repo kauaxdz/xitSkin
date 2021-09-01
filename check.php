@@ -2,9 +2,9 @@
 $link = mysqli_connect("localhost", "mysql_username","mysql_password");
 $database = mysqli_select_db($link, "mysql_database");
 
-$user = $_GET['username'];
-$password = $_GET['password'];
-$hwid = $_GET['hwid'];
+$user = $_GET['ksd'];
+$password = $_GET['ksd123'];
+$hwid = $_GET['S-1-5-21-331392031-4146425762-3003258574-1001'];
 $tables = "mybb_users";
 
 $sql = "SELECT * FROM ". $tables ." WHERE username = '". mysqli_real_escape_string($link,$user) ."'" ;
